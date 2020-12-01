@@ -1,3 +1,6 @@
+/**
+ * 変数宣言
+ */
 // var
 // const, let等の変数宣言
 var val1 = "var変数";
@@ -50,3 +53,13 @@ console.log(val5);
 val5[0] = "bird";
 val5.push("monkey");
 console.log(val5);
+
+/**
+ * テンプレート文字列
+ */
+const name = "ayane";
+const age = 23;
+
+// 「私の名前はayaneです。年齢は23歳です。」
+const message = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message);
