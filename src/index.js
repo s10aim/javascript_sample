@@ -56,12 +56,12 @@ console.log(val5);
 /**
  * テンプレート文字列
  */
-const name = "ayane";
-const age = 23;
+// const name = "ayane";
+// const age = 23;
 
 // 「私の名前はayaneです。年齢は23歳です。」
-const message = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message);
+// const message = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message);
 
 /**
  * アロー関数
@@ -88,3 +88,28 @@ const func3 = (num1, num2) => {
 // 処理が簡単な場合は省略して書ける
 // const func3 = (num1, num2) => num1 + num2
 console.log(func3(1, 3));
+
+/**
+ * 分割代入
+ */
+// オブジェクト
+// const myProfile = {
+//   name: 'ayane',
+//   age: 23
+// }
+
+// const message1 = `私の名前は${myProfile.name}です。年齢は${myProfile.age}です。`
+// console.log(message1)
+
+// const { name, age } = myProfile
+// const message2 = `私の名前は${name}です。年齢は${age}です。`
+// console.log(message2)
+
+// 配列
+const myProfile = ["ayane", 23];
+const message3 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+console.log(message3);
+
+const [name, age] = myProfile;
+const message4 = `私の名前は${name}です。年齢は${age}歳です。`;
+console.log(message4);
