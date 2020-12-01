@@ -2,7 +2,6 @@
  * 変数宣言
  */
 // var
-// const, let等の変数宣言
 var val1 = "var変数";
 console.log(val1);
 
@@ -63,3 +62,29 @@ const age = 23;
 // 「私の名前はayaneです。年齢は23歳です。」
 const message = `私の名前は${name}です。年齢は${age}です。`;
 console.log(message);
+
+/**
+ * アロー関数
+ */
+
+// 従来の関数
+//  function func1(str) {
+//    return str;
+//  }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+
+// アロー関数
+const func2 = (str) => {
+  return str;
+};
+console.log(func2("func2です"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+// 処理が簡単な場合は省略して書ける
+// const func3 = (num1, num2) => num1 + num2
+console.log(func3(1, 3));
