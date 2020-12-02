@@ -213,3 +213,27 @@ const checkSum = (num1, num2) => {
   return num1 + num2 > 100 ? "100を超えています!!" : "許容範囲内です";
 };
 console.log(checkSum(50, 60));
+
+/**
+ * 論理演算子の本当の意味を知ろう && ||
+ */
+const flag1 = true;
+const flag2 = false;
+
+if (flag1 || flag2) {
+  console.log("1か2はtrueになります");
+}
+
+if (flag1 && flag2) {
+  console.log("1か2はtrueになります");
+}
+
+// 「||」 は左側がfalseなら右を返す
+const number = null;
+const fee = number || "金額未設定です";
+console.log(fee);
+
+// 「&&」 は左側がtrueなら右側を返す
+const number2 = 100;
+const fee2 = number2 && "何か設定されました";
+console.log(fee2);
